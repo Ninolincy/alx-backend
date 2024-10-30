@@ -2,13 +2,14 @@
 """ FIFO cache """
 from base_caching import BaseCaching
 
+
 class FIFOCache(BaseCaching):
     """ FIFO cache class
     """
     def __init__(self) -> None:
         """ Constructor method to initialize FIFO"""
         super().__init__()
-    
+
     def put(self, key, item):
         """ Add an item in the cache
         """
@@ -22,4 +23,4 @@ class FIFOCache(BaseCaching):
 
     def get(self, key):
         """ return the value of key in cache """
-        return self.cache_data.get(key)  
+        return self.cache_data.get(key)
